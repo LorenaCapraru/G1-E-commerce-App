@@ -7,7 +7,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 8%;
+  padding: 30px 10%;
   /* padding: 8%; */
 }
 
@@ -54,7 +54,7 @@ svg {
   width: 20px;
   height: 20px;
   /* left: 36px; */
-  left: 8%;
+  left: 10%;
   /* padding-left: 8%; */
   top: 42px;
 }
@@ -137,5 +137,29 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* end of sidebar*/
-@media screen and (min-width: 540px) {
+/* @media screen and (min-width: 540px) {
+  .header {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+} */
+ul {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .bm-burger-button {
+    display: none;
+  }
+  h1 {
+    padding-left: 0px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+  }
+  ul li {
+    list-style-type: none;
+  }
 }
