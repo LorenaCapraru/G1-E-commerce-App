@@ -1,0 +1,41 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8%;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.5em;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.header img {
+  width: 2em;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+  height: 1.1em;
+  /* font-size: 30px; */
+}
+
+.header img,
+p,
+svg {
+  padding: 0px;
+}
