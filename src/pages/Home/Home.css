@@ -26,7 +26,7 @@ body {
 }
 
 .header img {
-  width: 2em;
+  width: 3em;
 }
 
 h1 {
@@ -129,7 +129,7 @@ svg {
 
 /* end of sidebar*/
 
-ul {
+.desktopMenuList {
   display: none;
 }
 
@@ -137,20 +137,28 @@ ul {
   .bm-burger-button {
     display: none;
   }
+
   h1 {
     padding-left: 0px;
   }
-  ul {
+
+  .desktopMenuList {
     display: flex;
     flex-direction: row;
     margin: 0px;
     gap: 1%;
   }
-  ul li {
+
+  .desktopMenuList li {
     list-style-type: none;
     font-size: 15px;
     color: grey;
     padding: 0px 5px;
+  }
+
+  .desktopMenuList a {
+    text-decoration: none;
+    color: grey;
   }
 
   .header {

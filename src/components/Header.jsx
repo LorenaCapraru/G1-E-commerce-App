@@ -9,13 +9,20 @@ export const Header = () => {
         <div className="headerLeft">
           <Sidebar />
           <h1>sneakers</h1>
-            <ul>
-              <li>Collections</li>
-              <li>Men</li>
-              <li>Women</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
+          <ul className="desktopMenuList">
+            <li>
+              <a href="/">Collections</a>
+            </li>
+            <li>
+              <a href="/">Men</a>
+            </li>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/">Contact</a>
+            </li>
+          </ul>
         </div>
 
         <div className="headerRight">
