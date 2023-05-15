@@ -2,13 +2,13 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+/* header decoration */
 .header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px 10%;
-  /* padding: 8%; */
 }
 
 .headerLeft {
@@ -53,9 +53,7 @@ svg {
   position: absolute;
   width: 20px;
   height: 20px;
-  /* left: 36px; */
   left: 10%;
-  /* padding-left: 8%; */
   top: 42px;
 }
 .bm-burger-button::before {
@@ -86,20 +84,14 @@ svg {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  /* background-color: #bdc3c7; */
   background-color: rgb(94, 92, 92, 0.8);
 }
 
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
 }
 
-/* General sidebar styles */
 .bm-menu {
   background: hsl(0, 0%, 100%);
   padding-top: 50px;
@@ -107,10 +99,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 80%;
 }
 
-/* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  /* padding: 0.8em; */
 }
 
 /* Individual item */
@@ -130,6 +120,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+  border-style: none;
 }
 
 .bm-item-list a:active {
@@ -137,12 +128,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* end of sidebar*/
-/* @media screen and (min-width: 540px) {
-  .header {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-} */
+
 ul {
   display: none;
 }
@@ -164,6 +150,12 @@ ul {
     list-style-type: none;
     font-size: 15px;
     color: grey;
-    padding: 0px 10px;
+    padding: 0px 5px;
+  }
+
+  .header {
+    border-bottom: 1px solid rgb(200, 194, 194);
+    padding: 40px 0px;
+    margin: 0px 10%;
   }
 }
