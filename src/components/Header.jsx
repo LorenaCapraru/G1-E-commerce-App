@@ -1,20 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import avatar from "../images/image-avatar.png";
 import { Sidebar } from "./Sidebar";
 
 export const Header = () => {
-  const [clickMenu, setClickMenu] = useState(false);
-
-  const handleClickMenu = () => {
-    !clickMenu ? setClickMenu(true) : setClickMenu(false);
-  };
-
   return (
     <>
       <div className="header">
         <div className="headerLeft">
           <Sidebar />
-          <h1 onClick={handleClickMenu}>sneakers</h1>
+          <h1>sneakers</h1>
         </div>
 
         <div className="headerRight">
@@ -29,8 +23,6 @@ export const Header = () => {
           <img src={avatar} alt="avatar" />
         </div>
       </div>
-      {/* {!clickMenu ? null : <div className="menuMobileOverlap">clicked</div>} */}
-      {/* {!clickMenu ? null : <Sidebar />} */}
     </>
   );
 };
