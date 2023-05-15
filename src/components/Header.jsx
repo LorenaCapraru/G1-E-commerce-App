@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Header = () => {
-  return <div>lala</div>;
+  return <div>header</div>;
 };
