@@ -54,7 +54,7 @@ svg {
   width: 20px;
   height: 20px;
   left: 10%;
-  top: 42px;
+  top: 61px;
 }
 .bm-burger-button::before {
   color: grey;
@@ -66,12 +66,12 @@ svg {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background-color: rgb(94, 92, 92, 0.8);
+  background-color: rgba(255, 125, 27, 1);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background-color: #a90000;
+  background-color: grey;
 }
 
 /* Position and sizing of clickable cross button */
