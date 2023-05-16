@@ -8,7 +8,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 10%;
+  /* padding: 30px 10%; */
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .headerLeft {
@@ -23,6 +25,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 1.5em;
+  padding-right: 1em;
 }
 
 .header img {
@@ -30,16 +33,14 @@ body {
 }
 
 h1 {
-  padding-left: 23%;
+  padding-left: 40%;
   margin: 0px;
   height: 1.1em;
 }
 
-.header img,
-p,
-svg {
-  padding: 0px;
-}
+/* .header img {
+  padding-right: 10%;
+} */
 
 /* sidebar */
 /* Position and sizing of burger button */
@@ -54,7 +55,7 @@ svg {
   width: 20px;
   height: 20px;
   left: 10%;
-  top: 42px;
+  top: 61px;
 }
 .bm-burger-button::before {
   color: grey;
@@ -66,12 +67,12 @@ svg {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background-color: rgb(94, 92, 92, 0.8);
+  background-color: rgba(255, 125, 27, 1);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background-color: #a90000;
+  background-color: grey;
 }
 
 /* Position and sizing of clickable cross button */
@@ -96,7 +97,8 @@ svg {
   background: hsl(0, 0%, 100%);
   padding-top: 50px;
   font-size: 1.15em;
-  width: 80%;
+  left: 0;
+  /* width: 80%; */
 }
 
 .bm-item-list {
@@ -112,6 +114,7 @@ svg {
   text-decoration: none;
   transition: color 0.2s;
   font-weight: 700;
+  left: 0%;
 }
 
 .bm-item:hover {
@@ -124,13 +127,19 @@ svg {
 }
 
 .bm-item-list a:active {
-  background-color: white;
+  color: rgba(255, 125, 27, 1);
 }
 
 /* end of sidebar*/
 
 .desktopMenuList {
   display: none;
+}
+
+.desktopMenuList a:hover {
+  padding-bottom: 38px;
+  border-bottom: 4px solid rgba(255, 125, 27, 1);
+  /* background-color: red; */
 }
 
 @media screen and (min-width: 767px) {

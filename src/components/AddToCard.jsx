@@ -1,12 +1,9 @@
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-
 import "./AddToCard.css";
 
-function AddToCard() {
-  const [cartCount, setCartCount] = useState(0);
-  const [totalCount, setTotalCount] = useState(0);
+function AddToCard({ cartCount, setCartCount, totalCount, setTotalCount }) {
+
 
   const handleIncrease = () => {
     setCartCount(cartCount + 1);
@@ -28,10 +25,6 @@ function AddToCard() {
     <div className="App">
       <header>
         <h1>E-commerce App</h1>
-        <div className="cart">
-          {cartIcon}
-          <span className="cart-count">{totalCount}</span>
-        </div>
       </header>
       <main>
         <div className="product">
