@@ -151,6 +151,7 @@ svg {
     flex-direction: row;
     margin: 0px;
     gap: 1%;
+    border-top-color: red;
   }
 
   .desktopMenuList li {
@@ -163,6 +164,7 @@ svg {
   .desktopMenuList a {
     text-decoration: none;
     color: grey;
+    padding: 40px 10%;
   }
 
   .header {
