@@ -1,13 +1,11 @@
-.product-component-container {
-  padding: 70px 180px;
-}
-
 @media (min-width: 768px) {
   .product-component-container {
     display: flex;
+    padding: 70px 180px;
   }
   .product-description {
     width: 50%;
+      padding: 30px 20px 40px 70px;
   }
 
   .product-photo {
@@ -17,7 +15,7 @@
 
 .product-description {
   text-align: left;
-  padding: 30px 20px 40px 70px;
+  padding: 30px 20px 40px 20px;
 }
 
 .the-product-company {
