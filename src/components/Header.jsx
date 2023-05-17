@@ -3,7 +3,7 @@ import avatar from "../images/image-avatar.png";
 import { Sidebar } from "./Sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import "./AddToCard.css";
+import "../styling/AddToCard.css";
 
 export const Header = ({ totalCount }) => {
   const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
@@ -13,7 +13,7 @@ export const Header = ({ totalCount }) => {
       <div className="header">
         <div className="headerLeft">
           <Sidebar />
-          <h1>sneakers</h1>
+          <h1 className="header-heading">sneakers</h1>
           <ul className="desktopMenuList">
             <li>
               <a href="/">Collections</a>
