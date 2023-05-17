@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Header } from "../../components/Header";
-import AddToCard from "../../components/AddToCard";
 import "./Home.css";
 import Product from "../../components/Product";
 
