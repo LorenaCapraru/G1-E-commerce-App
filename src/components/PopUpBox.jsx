@@ -16,7 +16,7 @@ export const PopUpBox = ({ totalCount, setTotalCount }) => {
 
   const deleteProduct = (e) => {
     e.preventDefault();
-    setTotalCount(totalCount--);
+    setTotalCount((totalCount -= 1));
   };
 
   const fullBasket = () => {
