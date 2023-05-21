@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import avatar from "../images/image-avatar.png";
 import { Sidebar } from "./Sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "../styling/AddToCard.css";
 
-export const Header = ({ totalCount }) => {
+export const Header = ({ totalCount, openCart, setOpenCart }) => {
   const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
-  const [openCart, setOpenCart] = useState(false);
+
+  const handleCartClick = (e) => {
+    e.preventDefault();
+    openCart === false ? setOpenCart(true) : setOpenCart(false);
+  };
 
   return (
     <>
@@ -32,7 +36,7 @@ export const Header = ({ totalCount }) => {
         </div>
 
         <div className="headerRight">
-          <div className="cart">
+          <div className="cart" onClick={handleCartClick}>
             {cartIcon}
             <span className="cart-count">{totalCount}</span>
           </div>
