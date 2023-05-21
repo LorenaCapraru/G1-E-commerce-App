@@ -1,3 +1,49 @@
 .container {
-  background-color: red;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 12%;
+}
+
+.container h1 {
+  font-size: 18px;
+  text-align: start;
+  padding: 5%;
+  border-bottom: 1px solid rgb(182, 177, 177);
+}
+
+.productName {
+  font-weight: bolder;
+  color: rgb(182, 177, 177);
+}
+
+.container .trash {
+  color: rgb(182, 177, 177);
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 5%;
+}
+
+.productContainer img {
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+}
+
+.productPrice {
+  font-weight: normal;
+  color: grey;
+}
+
+span {
+  color: rgb(85, 80, 80);
+  font-weight: bold;
 }
