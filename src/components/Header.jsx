@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import avatar from "../images/image-avatar.png";
 import { Sidebar } from "./Sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +7,7 @@ import "../styling/AddToCard.css";
 
 export const Header = ({ totalCount }) => {
   const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
+  const [openCart, setOpenCart] = useState(false);
 
   return (
     <>
