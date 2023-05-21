@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styling/PhotoSlider.css";
 
 const PhotoSlider = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
