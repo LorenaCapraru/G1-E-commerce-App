@@ -1,7 +1,15 @@
 import "../styling/Product.css";
 import AddToCard from "./AddToCard";
+import PhotoSlider from "./PhotoSlider";
 
 function Product({ cartCount, setCartCount, totalCount, setTotalCount }) {
+  const images = [
+    "/images/image-product-1.jpg",
+    "/images/image-product-2.jpg",
+    "/images/image-product-3.jpg",
+    "/images/image-product-4.jpg",
+  ];
+
   const handleIncrease = () => {
     setCartCount(cartCount + 1);
   };
@@ -21,7 +29,7 @@ function Product({ cartCount, setCartCount, totalCount, setTotalCount }) {
   return (
     <div className="product-component-container">
       <div className="product-photo">
-        PhotoSlider should be added here - component 9
+        <PhotoSlider images={images} />
       </div>
       <div className="product-description">
         <p className="the-product-company">SNEAKER COMPANY</p>
