@@ -11,20 +11,30 @@ const PhotoSlider = ({ images }) => {
   return (
     <div className="slider">
       <div className="main-slide">
-        <img src={images[0]} alt="Slider" className="slide-image" />
+        <img
+          src={currentSlide === 0 ? images[0] : images[currentSlide]}
+          alt="Slider"
+          className="slide-image"
+        />
       </div>
       <div className="thumbnail-slider">
-        {images.map((el, index) => ( //If you look here I did map the images
-          <img
-            key={index}
-            src={el}
-            alt={`Thumbnail ${index}`}
-            className={`thumbnail ${
-              currentSlide === index - 1 ? "active" : ""
-            }`}
-            onClick={() => handleClick(index - 1)}
-          />
-        ))}
+        {images.map(
+          (
+            el,
+            index //If you look here I did map the images
+          ) => (
+            <img
+              key={index}
+              src={el}
+              alt={`Thumbnail ${index}`}
+              className={`thumbnail ${
+                currentSlide === index - 1 ? "active" : ""
+              }`}
+              onClick={() => handleClick(index)}
+              // onClick={console.log(index)}
+            />
+          )
+        )}
       </div>
     </div>
   );
