@@ -3,7 +3,7 @@ import avatar from "../images/image-avatar.png";
 import { Sidebar } from "./Sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import "../styling/AddToCard.css";
+import "../styling/Header.css";
 
 export const Header = ({ totalCount, openCart, setOpenCart }) => {
   const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
