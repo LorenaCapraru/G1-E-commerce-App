@@ -1,14 +1,13 @@
 import "../styling/Product.css";
 import AddToCard from "./AddToCard";
 import PhotoSlider from "./PhotoSlider";
+import image1 from "../images/image-product-1.jpg";
+import image2 from "../images/image-product-2.jpg";
+import image3 from "../images/image-product-3.jpg";
+import image4 from "../images/image-product-4.jpg";
 
 function Product({ cartCount, setCartCount, totalCount, setTotalCount }) {
-  const images = [
-    "/images/image-product-1.jpg",
-    "/images/image-product-2.jpg",
-    "/images/image-product-3.jpg",
-    "/images/image-product-4.jpg",
-  ];
+  const images = [image1, image2, image3, image4];
 
   const handleIncrease = () => {
     setCartCount(cartCount + 1);

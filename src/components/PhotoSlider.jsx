@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PhotoSlider = () => {
+const PhotoSlider = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleClick = (index) => {
@@ -10,17 +10,13 @@ const PhotoSlider = () => {
   return (
     <div className="slider">
       <div className="main-slide">
-        <img
-          src={`/images/image-product-${currentSlide + 1}.jpg`}
-          alt="Slider"
-          className="slide-image"
-        />
+        <img src={images[0]} alt="Slider" className="slide-image" />
       </div>
       <div className="thumbnail-slider">
-        {[1, 2, 3, 4].map((index) => (
+        {images.map((el, index) => (
           <img
             key={index}
-            src={`/images/image-product-${index}-thumbnail.jpg`}
+            src={el}
             alt={`Thumbnail ${index}`}
             className={`thumbnail ${
               currentSlide === index - 1 ? "active" : ""
