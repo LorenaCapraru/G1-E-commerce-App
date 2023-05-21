@@ -19,12 +19,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: space-between;
 }
 
 .thumbnail {
   width: 20%;
-  justify-content: space-between;
   border-radius: 5px;
+
   /* Adjust the width as per your requirement */
   height: auto;
   cursor: pointer;
