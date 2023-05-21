@@ -15,9 +15,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+
   gap: 1em;
-  width: 50%;
-  padding-left: 50px;
 }
 
 .headerRight {
@@ -33,7 +32,7 @@ body {
 }
 
 .headingLogo {
-  margin: 0px;
+  margin: 0px 0px 0px 15%;
   height: 1.1em;
 }
 
@@ -53,7 +52,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 50px;
+  left: 7%;
   top: 61px;
 }
 .bm-burger-button::before {
@@ -96,7 +95,7 @@ body {
   background: hsl(0, 0%, 100%);
   padding-top: 50px;
   font-size: 1.15em;
-  left: 0;
+  /* left: 0; */
   /* width: 80%; */
 }
 
@@ -141,11 +140,12 @@ body {
   /* background-color: red; */
 }
 
-/* @media screen and (min-width: 570px) {
-  .headerLeft {
-    gap: 90px;
+@media screen and (min-width: 570px) {
+  .headingLogo {
+    margin: 0px 0px 0px 44%;
+    height: 1.1em;
   }
-} */
+}
 
 @media screen and (min-width: 1140px) {
   .header img {
