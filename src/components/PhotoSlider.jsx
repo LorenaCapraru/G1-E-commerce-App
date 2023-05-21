@@ -13,7 +13,7 @@ const PhotoSlider = ({ images }) => {
         <img src={images[0]} alt="Slider" className="slide-image" />
       </div>
       <div className="thumbnail-slider">
-        {images.map((el, index) => (
+        {images.map((el, index) => ( //If you look here I did map the images
           <img
             key={index}
             src={el}
