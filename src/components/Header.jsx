@@ -18,7 +18,7 @@ export const Header = ({ totalCount, openCart, setOpenCart }) => {
       <div className="header">
         <div className="headerLeft">
           <Sidebar />
-          <h1 className="header-heading">sneakers</h1>
+          <h1 className="headingLogo">sneakers</h1>
           <ul className="desktopMenuList">
             <li>
               <a href="/">Collections</a>
