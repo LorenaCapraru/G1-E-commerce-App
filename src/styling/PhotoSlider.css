@@ -1,0 +1,34 @@
+/* PhotoSlider */
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-slide {
+    margin-bottom: 10px;
+}
+
+.slide-image {
+    width: 100%;
+    /* Adjust the width as per your requirement */
+    height: auto;
+}
+
+.thumbnail-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 25%;
+    /* Adjust the width as per your requirement */
+    height: auto;
+    cursor: pointer;
+}
+
+.thumbnail.active {
+    border: 2px solid blue;
+    /* Add a border or any other styling for the active thumbnail */
+}

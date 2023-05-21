@@ -4,6 +4,7 @@ import "./Home.css";
 import Product from "../../components/Product";
 
 
+
 export const Home = () => {
   const [totalCount, setTotalCount] = useState(0);
   const [cartCount, setCartCount] = useState(0);
