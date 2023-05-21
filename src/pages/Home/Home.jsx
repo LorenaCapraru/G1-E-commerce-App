@@ -16,7 +16,9 @@ export const Home = () => {
         openCart={openCart}
         setOpenCart={setOpenCart}
       />
-      {!openCart ? null : <PopUpBox cartCount={cartCount} />}
+      {!openCart ? null : (
+        <PopUpBox totalCount={totalCount} setTotalCount={setTotalCount} />
+      )}
       <Product
         cartCount={cartCount}
         setCartCount={setCartCount}

@@ -47,3 +47,13 @@ span {
   color: rgb(85, 80, 80);
   font-weight: bold;
 }
+
+.empty p {
+  padding: 20% 0%;
+  color: grey;
+  font-weight: bolder;
+}
+
+/* .hidden {
+  display: none;
+} */
