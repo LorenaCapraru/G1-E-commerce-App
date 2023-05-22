@@ -3,17 +3,22 @@ import avatar from "../images/image-avatar.png";
 import { Sidebar } from "./Sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import "../styling/AddToCard.css";
+import "../styling/Header.css";
 
-export const Header = ({ totalCount }) => {
+export const Header = ({ totalCount, openCart, setOpenCart }) => {
   const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
+
+  const handleCartClick = (e) => {
+    e.preventDefault();
+    openCart === false ? setOpenCart(true) : setOpenCart(false);
+  };
 
   return (
     <>
       <div className="header">
         <div className="headerLeft">
           <Sidebar />
-          <h1 className="header-heading">sneakers</h1>
+          <h1 className="headingLogo">sneakers</h1>
           <ul className="desktopMenuList">
             <li>
               <a href="/">Collections</a>
@@ -31,7 +36,7 @@ export const Header = ({ totalCount }) => {
         </div>
 
         <div className="headerRight">
-          <div className="cart">
+          <div className="cart" onClick={handleCartClick}>
             {cartIcon}
             <span className="cart-count">{totalCount}</span>
           </div>
