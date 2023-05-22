@@ -147,7 +147,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 768px) {
   .header img {
     width: 3em;
   }
