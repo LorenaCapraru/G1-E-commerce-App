@@ -13,6 +13,7 @@
   width: 100%;
   /* Adjust the width as per your requirement */
   height: auto;
+  border-radius: 5px;
 }
 
 .thumbnail-slider {
@@ -32,6 +33,6 @@
 }
 
 .thumbnail.active {
-  border: 2px solid blue;
+  border: 2px solid rgb(255, 120, 0);
   /* Add a border or any other styling for the active thumbnail */
 }
