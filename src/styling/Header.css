@@ -156,8 +156,8 @@ body {
     display: none;
   }
 
-  h1 {
-    padding-left: 0px;
+  .headingLogo {
+    margin: 0px;
   }
 
   .desktopMenuList {
