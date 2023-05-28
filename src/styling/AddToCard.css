@@ -21,6 +21,12 @@
   font-size: 10px;
 }
 
+.cart-count:hover {
+  box-shadow: 0 0 0 1.2px black;
+  /*Mohammad: Add black circle hover effect */
+}
+
+
 .quantity-container {
   display: flex;
   align-items: center;

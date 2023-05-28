@@ -11,6 +11,7 @@ body {
   padding: 30px 3% 30px 0%;
 }
 
+
 .headerLeft {
   display: flex;
   flex-direction: row;
@@ -29,6 +30,12 @@ body {
 
 .header img {
   width: 2em;
+}
+
+.header img:hover {
+  box-shadow: 0 0 0 2px rgba(255, 125, 27, 1);
+  border-radius: 50%;
+  /*Mohammad: Add circle hover effect */
 }
 
 .headingLogo {
@@ -178,6 +185,10 @@ body {
     text-decoration: none;
     color: grey;
   }
+
+  .desktopMenuList a:hover { /* Mohammad: Add a hover state to the text in the header and change the color to black   */
+      color: black;
+    }
 
   .header {
     border-bottom: 1px solid rgb(200, 194, 194);
