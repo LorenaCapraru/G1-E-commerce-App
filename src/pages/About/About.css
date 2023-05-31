@@ -1,0 +1,98 @@
+/* CSS for responsive layout */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.store-image,
+.shoes-image {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/* Background color for the whole page */
+body {
+    background: hsl(0, 0%, 100%);
+}
+
+/* Padding and border for images */
+.store-image,
+.shoes-image {
+    padding: 10px;
+    border: 4px solid  rgba(255, 125, 27, 1);;
+}
+
+/* Margin behind the page */
+body::before {
+    content: "";
+    position: fixed;
+    top: -6px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background-color: #eeeeee;
+    opacity: 0.8;
+}
+
+/* Hover effect on images */
+.store-image:hover,
+.shoes-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Additional styles for headings and paragraphs */
+h1 {
+    font-size: 34px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-shadow: 4px 2px 4px rgba(234, 124, 28, 0.5);
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px rgba(142, 48, 7, 0.1);
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 600px) {
+    .about-content {
+        padding: 10px;
+    }
+
+    .store-image,
+    .shoes-image {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
