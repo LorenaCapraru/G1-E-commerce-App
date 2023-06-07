@@ -4,6 +4,7 @@ import { Sidebar } from "./Sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "../styling/Header.css";
+import { Link } from "react-router-dom";
 
 export const Header = ({ totalCount, openCart, setOpenCart }) => {
   const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
@@ -21,16 +22,13 @@ export const Header = ({ totalCount, openCart, setOpenCart }) => {
           <h1 className="headingLogo">sneakers</h1>
           <ul className="desktopMenuList">
             <li>
-              <a href="/">Collections</a>
+              <Link to="/collections">Collections</Link>
             </li>
             <li>
-              <a href="/">Men</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/">About</a>
-            </li>
-            <li>
-              <a href="/">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
